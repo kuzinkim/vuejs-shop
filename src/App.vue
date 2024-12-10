@@ -1,7 +1,13 @@
 <script setup>
-import MyHello from './components/MyHello.vue'
+import Counter from './components/CounterComponent.vue'
+import ExampleComponent from './components/ExampleComponent.vue'
 </script>
 
 <template>
-  <MyHello />
+  <Counter />
+  <ExampleComponent title="Кроссовки PUMA" :price="9000" is-added />
+  <ExampleComponent title="Кроссовки PUMA" :price="9000" :isAdded="true" />
+  <ExampleComponent title="Кроссовки PUMA" :price="9000" />
+  <ExampleComponent title="Кроссовки PUMA" :price="9000" />
+  <ExampleComponent title="Кроссовки PUMA" :price="9000" />
 </template>
