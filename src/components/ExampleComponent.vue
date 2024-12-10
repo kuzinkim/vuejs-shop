@@ -11,6 +11,8 @@ defineProps({
     <h2>{{ title }}</h2>
     <h3>{{ price }}</h3>
     <div>{{ isAdded }}</div>
+
+    <slot></slot>
   </div>
 </template>
 

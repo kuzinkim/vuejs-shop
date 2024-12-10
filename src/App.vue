@@ -5,7 +5,9 @@ import ExampleComponent from './components/ExampleComponent.vue'
 
 <template>
   <Counter />
-  <ExampleComponent title="Кроссовки PUMA" :price="9000" is-added />
+  <ExampleComponent title="Кроссовки PUMA" :price="9000" is-added>
+    <button>Добавить</button>
+  </ExampleComponent>
   <ExampleComponent title="Кроссовки PUMA" :price="9000" :isAdded="true" />
   <ExampleComponent title="Кроссовки PUMA" :price="9000" />
   <ExampleComponent title="Кроссовки PUMA" :price="9000" />
