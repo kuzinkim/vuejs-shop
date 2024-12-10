@@ -1,15 +1,16 @@
 <script setup>
-import Counter from './components/CounterComponent.vue'
-import ExampleComponent from './components/ExampleComponent.vue'
+import CardList from './components/CardList.vue'
+import HeaderBlock from './components/HeaderBlock.vue'
 </script>
 
 <template>
-  <Counter />
-  <ExampleComponent title="Кроссовки PUMA" :price="9000" is-added>
-    <button>Добавить</button>
-  </ExampleComponent>
-  <ExampleComponent title="Кроссовки PUMA" :price="9000" :isAdded="true" />
-  <ExampleComponent title="Кроссовки PUMA" :price="9000" />
-  <ExampleComponent title="Кроссовки PUMA" :price="9000" />
-  <ExampleComponent title="Кроссовки PUMA" :price="9000" />
+  <div class="bg-white w-4/5 m-auto rounded-xl shadow-xl mt-14">
+    <HeaderBlock />
+
+    <div class="p-10">
+      <h2 class="text-3xl font-bold mb-8">Все кроссовки</h2>
+
+      <CardList />
+    </div>
+  </div>
 </template>
